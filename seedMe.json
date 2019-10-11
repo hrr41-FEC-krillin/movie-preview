@@ -1,0 +1,362 @@
+[
+  {
+    "movieName": "Jean Shorts Mustache",
+    "criticConsensus": "Taxidermy sriracha XOXO, synth cold-pressed stumptown tacos migas authentic.",
+    "potatoMeter": {
+      "percentage": 97,
+      "averageRating": 8.27,
+      "totalCount": 486,
+      "fresh": 469,
+      "spoiled": 17
+    },
+    "audienceScore": {
+      "percentage": 79,
+      "averageRating": 4.05,
+      "totalCount": 88211
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=xjDjIWPwcPU",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/1206885.jpg"
+  },
+  {
+    "movieName": "Narwhal Blog",
+    "criticConsensus": "Asymmetrical butcher pinterest neutra vape put a bird on it cray, hoodie ugh vexillologist mumblecore single-origin coffee.",
+    "potatoMeter": {
+      "percentage": 99,
+      "averageRating": 8.74,
+      "totalCount": 378,
+      "fresh": 374,
+      "spoiled": 4
+    },
+    "audienceScore": {
+      "percentage": 79,
+      "averageRating": 3.92,
+      "totalCount": 21528
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=cNi_HC839Wo",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/2935510.jpg"
+  },
+  {
+    "movieName": "Kale Chips",
+    "criticConsensus": "Roof party meggings flexitarian tofu tilde, taiyaki neutra pour-over prism twee humblebrag hell of jean shorts cred.",
+    "potatoMeter": {
+      "percentage": 100,
+      "averageRating": 9.47,
+      "totalCount": 83,
+      "fresh": 83,
+      "spoiled": 0
+    },
+    "audienceScore": {
+      "percentage": 90,
+      "averageRating": 4.41,
+      "totalCount": 158829
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=8dxh3lwdOFw",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/5503686.jpg"
+  },
+  {
+    "movieName": "Tilde",
+    "criticConsensus": "DIY cloud bread, keytar cred deep v lumbersexual ramps authentic asymmetrical roof party hell of post-ironic taiyaki.",
+    "potatoMeter": {
+      "percentage": 52,
+      "averageRating": 6,
+      "totalCount": 390,
+      "fresh": 206,
+      "spoiled": 184
+    },
+    "audienceScore": {
+      "percentage": 88,
+      "averageRating": 4.42,
+      "totalCount": 76164
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=c_Ne5g5F-WY",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/6324278.jpg"
+  },
+  {
+    "movieName": "Cold Pressed",
+    "criticConsensus": "Flannel yr stumptown fam flexitarian neutra iPhone mustache chia tote bag wayfarers bespoke meggings keytar hexagon.",
+    "potatoMeter": {
+      "percentage": 83,
+      "averageRating": 7.29,
+      "totalCount": 149,
+      "fresh": 124,
+      "spoiled": 25
+    },
+    "audienceScore": {
+      "percentage": 63,
+      "averageRating": 3.41,
+      "totalCount": 630
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=Alv1znZA6Es",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/6398184.jpg"
+  },
+  {
+    "movieName": "Disrupt",
+    "criticConsensus": "Tacos selvage mumblecore, chartreuse put a bird on it YOLO lyft hammock vaporware tote bag 8-bit chia.",
+    "potatoMeter": {
+      "percentage": 84,
+      "averageRating": 6.88,
+      "totalCount": 70,
+      "fresh": 59,
+      "spoiled": 11
+    },
+    "audienceScore": {
+      "percentage": 100,
+      "averageRating": 4.43,
+      "totalCount": 7
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=Alv1znZA6Es",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/6324278.jpg"
+  },
+  {
+    "movieName": "Disrupt",
+    "criticConsensus": "Tacos selvage mumblecore, chartreuse put a bird on it YOLO lyft hammock vaporware tote bag 8-bit chia.",
+    "potatoMeter": {
+      "percentage": 84,
+      "averageRating": 6.88,
+      "totalCount": 70,
+      "fresh": 59,
+      "spoiled": 11
+    },
+    "audienceScore": {
+      "percentage": 100,
+      "averageRating": 4.43,
+      "totalCount": 7
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=YEb4JpwDAoE",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/6324278.jpg"
+  },
+  {
+    "movieName": "Cliche",
+    "criticConsensus": "Unicorn chicharrones franzen tumeric distillery man bun squid.",
+    "potatoMeter": {
+      "percentage": 76,
+      "averageRating": 6.86,
+      "totalCount": 70,
+      "fresh": 53,
+      "spoiled": 17
+    },
+    "audienceScore": {
+      "percentage": 86,
+      "averageRating": 3.86,
+      "totalCount": 7
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=r7kWQj9FCGY",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/7343762.jpg"
+  },
+  {
+    "movieName": "Chambray",
+    "criticConsensus": "Art party vexillologist meditation sartorial tbh VHS pug post-ironic tacos.",
+    "potatoMeter": {
+      "percentage": 97,
+      "averageRating": 8.42,
+      "totalCount": 75,
+      "fresh": 73,
+      "spoiled": 2
+    },
+    "audienceScore": {
+      "percentage": 100,
+      "averageRating": 5,
+      "totalCount": 1
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=qtRKdVHc-cE",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/7549996.jpg"
+  },
+  {
+    "movieName": "Chicken",
+    "criticConsensus": "Lumbersexual 8-bit pinterest slow-carb. Narwhal woke vape quinoa franzen meh.",
+    "potatoMeter": {
+      "percentage": 75,
+      "averageRating": 5.18,
+      "totalCount": 12,
+      "fresh": 9,
+      "spoiled": 3
+    },
+    "audienceScore": {
+      "percentage": 80,
+      "averageRating": 4.07,
+      "totalCount": 387
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=96Y24a0cyCE",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/7430722.jpg"
+  },
+  {
+    "movieName": "Heirloom",
+    "criticConsensus": "Kickstarter roof party disrupt ennui you probably haven't heard of them try-hard.",
+    "potatoMeter": {
+      "percentage": 79,
+      "averageRating": 6.5,
+      "totalCount": 217,
+      "fresh": 172,
+      "spoiled": 45
+    },
+    "audienceScore": {
+      "percentage": 86,
+      "averageRating": 4.3,
+      "totalCount": 12819
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=D1kH4OMIOMc",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/berkshire-county-movie-poster-sm+(1).jpg"
+  },
+  {
+    "movieName": "You",
+    "criticConsensus": "Gastropub bespoke keytar, craft beer letterpress vegan adaptogen cardigan chia sriracha subway tile asymmetrical banjo listicle.",
+    "potatoMeter": {
+      "percentage": 39,
+      "averageRating": 4.97,
+      "totalCount": 172,
+      "fresh": 67,
+      "spoiled": 105
+    },
+    "audienceScore": {
+      "percentage": 93,
+      "averageRating": 4.51,
+      "totalCount": 14505
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=oihHs2Errwk",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/berkshire-county-movie-poster-sm.jpg"
+  },
+  {
+    "movieName": "8-bit",
+    "criticConsensus": "In forage retro celiac, shaman pabst chillwave chartreuse butcher tumeric tbh sriracha raw denim man braid hammock.",
+    "potatoMeter": {
+      "percentage": 67,
+      "averageRating": 6.09,
+      "totalCount": 320,
+      "fresh": 214,
+      "spoiled": 106
+    },
+    "audienceScore": {
+      "percentage": 88,
+      "averageRating": 4.37,
+      "totalCount": 27595
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=znmZoVkCjpI",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/charlies-angels-brazilian-movie-poster-sm.jpg"
+  },
+  {
+    "movieName": "Velit",
+    "criticConsensus": "Locavore neutra tbh asymmetrical. Brunch esse roof party butcher, in mlkshk ennui keffiyeh poutine.",
+    "potatoMeter": {
+      "percentage": 95,
+      "averageRating": 7.59,
+      "totalCount": 154,
+      "fresh": 147,
+      "spoiled": 7
+    },
+    "audienceScore": {
+      "percentage": 96,
+      "averageRating": 4.62,
+      "totalCount": 4539
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=D6WOoUG1eNo",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/faces-of-emmanuelle-movie-poster-sm.jpg"
+  },
+  {
+    "movieName": "Banjo",
+    "criticConsensus": "Health goth duis plaid kale chips et. Tofu locavore poutine, venmo woke cred deep v labore twee enamel pin.",
+    "potatoMeter": {
+      "percentage": 79,
+      "averageRating": 6.46,
+      "totalCount": 213,
+      "fresh": 168,
+      "spoiled": 45
+    },
+    "audienceScore": {
+      "percentage": 72,
+      "averageRating": 3.82,
+      "totalCount": 8131
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=AjCebKn4iic",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/halloween-resurrection-ukrainian-movie-poster-sm.jpg"
+  },
+  {
+    "movieName": "Fusce",
+    "criticConsensus": "Pellentesque ut bibendum nisi. Proin vestibulum erat quis velit rutrum, in euismod diam convallis.",
+    "potatoMeter": {
+      "percentage": 50,
+      "averageRating": 5.79,
+      "totalCount": 16,
+      "fresh": 8,
+      "spoiled": 8
+    },
+    "audienceScore": {
+      "percentage": 98,
+      "averageRating": 4.82,
+      "totalCount": 7125
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=tL4McUzXfFI",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/hard-night-falling-movie-cover-sm.jpg"
+  },
+  {
+    "movieName": "Cras",
+    "criticConsensus": "Aenean nec dictum libero, eu accumsan turpis. Pellentesque lacinia facilisis tellus id pretium.",
+    "potatoMeter": {
+      "percentage": 84,
+      "averageRating": 6.46,
+      "totalCount": 143,
+      "fresh": 120,
+      "spoiled": 23
+    },
+    "audienceScore": {
+      "percentage": 88,
+      "averageRating": 4.3,
+      "totalCount": 6646
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=KnrRy6kSFF0",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/insidious-chapter-2-ukrainian-movie-poster-sm.jpg"
+  },
+  {
+    "movieName": "Orci",
+    "criticConsensus": "Nulla congue nisl in mi posuere, a consectetur quam interdum. Vestibulum id viverra metus.",
+    "potatoMeter": {
+      "percentage": 97,
+      "averageRating": 8.39,
+      "totalCount": 402,
+      "fresh": 391,
+      "spoiled": 11
+    },
+    "audienceScore": {
+      "percentage": 94,
+      "averageRating": 4.6,
+      "totalCount": 53094
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=SVCHSiRWjJM",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/knives-and-skin-movie-poster-sm.jpg"
+  },
+  {
+    "movieName": "Morbi",
+    "criticConsensus": "Proin nec scelerisque nulla, ac aliquam sapien. Nam quis quam massa. Duis et mauris vel orci condimentum aliquet ac vitae dui.",
+    "potatoMeter": {
+      "percentage": 88,
+      "averageRating": 7.41,
+      "totalCount": 135,
+      "fresh": 119,
+      "spoiled": 16
+    },
+    "audienceScore": {
+      "percentage": 87,
+      "averageRating": 4.26,
+      "totalCount": 1273
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=38A__WT3-o0",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/live-by-night-movie-poster-sm.jpg"
+  },
+  {
+    "movieName": "Cras Blandit",
+    "criticConsensus": "Ut tempus, urna sit amet sodales interdum, neque urna semper diam, eget porta neque nibh eget urna.",
+    "potatoMeter": {
+      "percentage": 57,
+      "averageRating": 5.92,
+      "totalCount": 352,
+      "fresh": 202,
+      "spoiled": 150
+    },
+    "audienceScore": {
+      "percentage": 94,
+      "averageRating": 4.58,
+      "totalCount": 59020
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=iojhqm0JTW4",
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/live-free-or-die-hard-movie-poster-sm.jpg"
+  }
+]
