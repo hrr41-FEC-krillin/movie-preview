@@ -60,3 +60,4 @@ let save = movies => {
 };
 
 module.exports.save = save;
+module.exports.Preview = Preview;
