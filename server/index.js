@@ -10,11 +10,6 @@ app.use(express.json());
 
 app.use("/api", router);
 
-// app.get("/api/moviePreview", (req, res) => {
-//   console.log("inside app get from index.js server");
-//   res.send("Heyyyyy");
-// });
-
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
 });
