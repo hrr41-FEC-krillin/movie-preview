@@ -10,7 +10,7 @@
   },
   "scripts": {
     "seed": "node server/seeder.js",
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack -d --watch",
     "nodemon": "nodemon server/index.js"
   },
   "dependencies": {
@@ -21,6 +21,7 @@
     "mongoose-auto-increment": "^5.0.1",
     "mongoose-unique-validator": "^2.0.3",
     "nodemon": "^1.19.3",
+    "path": "^0.12.7",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "router": "^1.3.3"
