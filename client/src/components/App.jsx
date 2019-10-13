@@ -3,8 +3,9 @@ import ReactDOM from "react-dom";
 import axios from "axios";
 // import CriticConsensus from "./CriticConsensus.js";
 // import MoreInfo from "./MoreInfo.js";
-// import Poster from "./Poster.js";
+import Poster from "./Poster.jsx";
 import VideoPlayer from "./VideoPlayer.jsx";
+import ModalVideo from "react-modal-video";
 
 class App extends React.Component {
   constructor(props) {
@@ -21,9 +22,17 @@ class App extends React.Component {
       audienceAverageRating: 0,
       audienceReviewCount: 0,
       videoUrl: "",
-      imgUgl: ""
+      imgUrl: "",
+      isOpen: false
     };
     this.getMovieInfo = this.getMovieInfo.bind(this);
+    this.openModal = this.openModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({
+      isOpen: true
+    });
   }
 
   getMovieInfo() {
@@ -43,7 +52,7 @@ class App extends React.Component {
           audienceAverageRating: response.data[0].audienceScore.averageRating,
           audienceReviewCount: response.data[0].audienceScore.totalCount,
           videoUrl: response.data[0].videoUrl,
-          imgUgl: response.data[0].imgUrl
+          imgUrl: response.data[0].imgUrl
         });
       })
       .catch(error => {
@@ -58,11 +67,30 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <VideoPlayer videoUrl={this.state.videoUrl} />
+      <div className="parent-div">
+        <div>
+          <VideoPlayer
+            videoUrl={this.state.videoUrl}
+            onClick={this.openModal}
+          />
+          <ModalVideo
+            channel="youtube"
+            isOpen={this.state.isOpen}
+            videoId="1xqwyudGlPU"
+            onClose={() => this.setState({ isOpen: false })}
+          />
+          <button onClick={this.openModal}>Button</button>
+        </div>
+        <div>
+          <Poster imgUrl={this.state.imgUrl} />
+        </div>
       </div>
     );
   }
 }
 
 export default App;
+
+// {
+//   this.state.videoUrl.substring(this.state.videoUrl.indexOf("=") + 1);
+// }
