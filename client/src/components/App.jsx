@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
-// import CriticConsensus from "./CriticConsensus.js";
+import CriticConsensus from "./CriticConsensus.jsx";
 // import MoreInfo from "./MoreInfo.js";
 import Poster from "./Poster.jsx";
 import VideoPlayer from "./VideoPlayer.jsx";
@@ -73,16 +73,24 @@ class App extends React.Component {
             videoUrl={this.state.videoUrl}
             onClick={this.openModal}
           />
-          <ModalVideo
+          {/* <ModalVideo
             channel="youtube"
             isOpen={this.state.isOpen}
             videoId="1xqwyudGlPU"
             onClose={() => this.setState({ isOpen: false })}
           />
-          <button onClick={this.openModal}>Button</button>
+          <button onClick={this.openModal}>Button</button> */}
         </div>
-        <div>
+        <div className="poster-critic-container">
           <Poster imgUrl={this.state.imgUrl} />
+          <CriticConsensus
+            consensus={this.state.consensus}
+            name={this.state.name}
+            potatoPercentage={this.state.potatoPercentage}
+            audiencePercentage={this.state.audiencePercentage}
+            potatoReviewCount={this.state.potatoReviewCount}
+            audienceReviewCount={this.state.audienceReviewCount}
+          />
         </div>
       </div>
     );
