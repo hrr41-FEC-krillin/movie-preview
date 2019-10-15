@@ -1,4 +1,5 @@
 import React from "react";
+import MoreInfo from "./MoreInfo.jsx";
 // import Hr from "react-native-hr-component";
 
 class CriticConsensus extends React.Component {
@@ -17,12 +18,17 @@ class CriticConsensus extends React.Component {
       return "https://moviepreview.s3.us-east-2.amazonaws.com/greenpopcorn.png";
     }
   }
+
+  // TODO
+  // renderHorizontalLine() {
+  // title has 20 characters, there are 7 dshses on each
+  // }
   render() {
     return (
       <div className="critic-consensus-container">
-        <h2 className="header">
+        <h1 className="header">
           ─────── {this.props.name.toUpperCase()} ───────
-        </h2>
+        </h1>
         <div className="critic-consensus">Critics Consensus</div>
         <div className="consensus">{this.props.consensus}</div>
         <div className="ratings-container">
@@ -53,8 +59,20 @@ class CriticConsensus extends React.Component {
             </div>
           </div>
         </div>
+        {/* //eventually move this to moreinfo component */}
         <div className="more-info-bar">
-          <button className="more-info-button">MORE INFO</button>
+          <MoreInfo
+            potatoPercentage={this.props.potatoPercentage}
+            audiencePercentage={this.props.audiencePercentage}
+            potatoReviewCount={this.props.potatoReviewCount}
+            audienceReviewCount={this.props.audienceReviewCount}
+            potatoAverageRating={this.props.potatoAverageRating}
+            freshPotatos={this.props.freshPotatos}
+            spoiledPotatos={this.props.spoiledPotatos}
+            audienceAverageRating={this.props.audienceAverageRating}
+            // renderPopcorn={this.renderPopcorn}
+            // renderPotato={this.renderPotato}
+          />
         </div>
       </div>
     );
