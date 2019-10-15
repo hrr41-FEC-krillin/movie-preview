@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 import CriticConsensus from "./CriticConsensus.jsx";
-// import MoreInfo from "./MoreInfo.js";
+import MoreInfo from "./MoreInfo.jsx";
 import Poster from "./Poster.jsx";
 import VideoPlayer from "./VideoPlayer.jsx";
 import ModalVideo from "react-modal-video";
@@ -90,6 +90,10 @@ class App extends React.Component {
             audiencePercentage={this.state.audiencePercentage}
             potatoReviewCount={this.state.potatoReviewCount}
             audienceReviewCount={this.state.audienceReviewCount}
+            potatoAverageRating={this.state.potatoAverageRating}
+            freshPotatos={this.state.freshPotatos}
+            spoiledPotatos={this.state.spoiledPotatos}
+            audienceAverageRating={this.state.audienceAverageRating}
           />
         </div>
       </div>
