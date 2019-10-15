@@ -15,7 +15,8 @@
       "totalCount": 88211
     },
     "videoUrl": "https://www.youtube.com/watch?v=xjDjIWPwcPU",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/1206885.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/blackpantherposter.png",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/blackpantherscene.jpg"
   },
   {
     "movieName": "Narwhal Blog",
@@ -33,7 +34,8 @@
       "totalCount": 21528
     },
     "videoUrl": "https://www.youtube.com/watch?v=cNi_HC839Wo",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/2935510.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/ladybirdposter.png",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/ladybirdscene.jpeg"
   },
   {
     "movieName": "Kale Chips",
@@ -51,7 +53,8 @@
       "totalCount": 158829
     },
     "videoUrl": "https://www.youtube.com/watch?v=8dxh3lwdOFw",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/5503686.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/citizenkaneposter.png",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/citizenkanescene.jpg"
   },
   {
     "movieName": "Tilde",
@@ -69,7 +72,8 @@
       "totalCount": 76164
     },
     "videoUrl": "https://www.youtube.com/watch?v=c_Ne5g5F-WY",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/6324278.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/wizardofozposter.png",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/wizardofozscene.jpeg"
   },
   {
     "movieName": "Cold Pressed",
@@ -87,7 +91,8 @@
       "totalCount": 630
     },
     "videoUrl": "https://www.youtube.com/watch?v=Alv1znZA6Es",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/6398184.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/onwardposter.png",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/onwardscene.jpg"
   },
   {
     "movieName": "Disrupt",
@@ -105,7 +110,8 @@
       "totalCount": 7
     },
     "videoUrl": "https://www.youtube.com/watch?v=Alv1znZA6Es",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/6324278.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/onwardposter.png",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/onwardscene.jpg"
   },
   {
     "movieName": "Disrupt",
@@ -123,7 +129,8 @@
       "totalCount": 7
     },
     "videoUrl": "https://www.youtube.com/watch?v=YEb4JpwDAoE",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/6324278.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/rattlesnakeposter.png",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/rattlesnakescene.jpg"
   },
   {
     "movieName": "Cliche",
@@ -141,7 +148,8 @@
       "totalCount": 7
     },
     "videoUrl": "https://www.youtube.com/watch?v=r7kWQj9FCGY",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/7343762.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/amadeusposter.png",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/amadeusscene.jpg"
   },
   {
     "movieName": "Chambray",
@@ -159,7 +167,8 @@
       "totalCount": 1
     },
     "videoUrl": "https://www.youtube.com/watch?v=qtRKdVHc-cE",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/7549996.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/fightclubscene.png",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/fightclubscene.jpg"
   },
   {
     "movieName": "Chicken",
@@ -177,7 +186,8 @@
       "totalCount": 387
     },
     "videoUrl": "https://www.youtube.com/watch?v=96Y24a0cyCE",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/7430722.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/blackdynamitescene.png",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/blackdynamitescene.jpg"
   },
   {
     "movieName": "Heirloom",
@@ -195,7 +205,8 @@
       "totalCount": 12819
     },
     "videoUrl": "https://www.youtube.com/watch?v=D1kH4OMIOMc",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/berkshire-county-movie-poster-sm+(1).jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/captainfantasticposter.png",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/captainfantasticscene.jpg"
   },
   {
     "movieName": "You",
@@ -213,7 +224,8 @@
       "totalCount": 14505
     },
     "videoUrl": "https://www.youtube.com/watch?v=oihHs2Errwk",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/berkshire-county-movie-poster-sm.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/berkshire-county-movie-poster-sm.jpg",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/captainfantasticscene.jpg"
   },
   {
     "movieName": "8-bit",
@@ -231,7 +243,8 @@
       "totalCount": 27595
     },
     "videoUrl": "https://www.youtube.com/watch?v=znmZoVkCjpI",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/charlies-angels-brazilian-movie-poster-sm.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/charlies-angels-brazilian-movie-poster-sm.jpg",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/captainfantasticscene.jpg"
   },
   {
     "movieName": "Velit",
@@ -249,7 +262,8 @@
       "totalCount": 4539
     },
     "videoUrl": "https://www.youtube.com/watch?v=D6WOoUG1eNo",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/faces-of-emmanuelle-movie-poster-sm.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/faces-of-emmanuelle-movie-poster-sm.jpg",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/captainfantasticscene.jpg"
   },
   {
     "movieName": "Banjo",
@@ -267,7 +281,8 @@
       "totalCount": 8131
     },
     "videoUrl": "https://www.youtube.com/watch?v=AjCebKn4iic",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/halloween-resurrection-ukrainian-movie-poster-sm.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/halloween-resurrection-ukrainian-movie-poster-sm.jpg",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/captainfantasticscene.jpg"
   },
   {
     "movieName": "Fusce",
@@ -285,7 +300,8 @@
       "totalCount": 7125
     },
     "videoUrl": "https://www.youtube.com/watch?v=tL4McUzXfFI",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/hard-night-falling-movie-cover-sm.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/hard-night-falling-movie-cover-sm.jpg",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/captainfantasticscene.jpg"
   },
   {
     "movieName": "Cras",
@@ -303,7 +319,8 @@
       "totalCount": 6646
     },
     "videoUrl": "https://www.youtube.com/watch?v=KnrRy6kSFF0",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/insidious-chapter-2-ukrainian-movie-poster-sm.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/insidious-chapter-2-ukrainian-movie-poster-sm.jpg",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/captainfantasticscene.jpg"
   },
   {
     "movieName": "Orci",
@@ -321,7 +338,8 @@
       "totalCount": 53094
     },
     "videoUrl": "https://www.youtube.com/watch?v=SVCHSiRWjJM",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/knives-and-skin-movie-poster-sm.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/knives-and-skin-movie-poster-sm.jpg",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/captainfantasticscene.jpg"
   },
   {
     "movieName": "Morbi",
@@ -339,7 +357,8 @@
       "totalCount": 1273
     },
     "videoUrl": "https://www.youtube.com/watch?v=38A__WT3-o0",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/live-by-night-movie-poster-sm.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/live-by-night-movie-poster-sm.jpg",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/captainfantasticscene.jpg"
   },
   {
     "movieName": "Cras Blandit",
@@ -357,6 +376,7 @@
       "totalCount": 59020
     },
     "videoUrl": "https://www.youtube.com/watch?v=iojhqm0JTW4",
-    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/live-free-or-die-hard-movie-poster-sm.jpg"
+    "imgUrl": "https://moviepreview.s3.us-east-2.amazonaws.com/live-free-or-die-hard-movie-poster-sm.jpg",
+    "videoScene": "https://moviepreview.s3.us-east-2.amazonaws.com/captainfantasticscene.jpg"
   }
 ]

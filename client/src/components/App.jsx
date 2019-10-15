@@ -5,7 +5,7 @@ import CriticConsensus from "./CriticConsensus.jsx";
 import MoreInfo from "./MoreInfo.jsx";
 import Poster from "./Poster.jsx";
 import VideoPlayer from "./VideoPlayer.jsx";
-import ModalVideo from "react-modal-video";
+// import ModalVideo from "react-modal-video";
 
 class App extends React.Component {
   constructor(props) {
@@ -23,17 +23,17 @@ class App extends React.Component {
       audienceReviewCount: 0,
       videoUrl: "",
       imgUrl: "",
-      isOpen: false
+      videoScene: ""
+      // isOpen: false
     };
     this.getMovieInfo = this.getMovieInfo.bind(this);
-    this.openModal = this.openModal.bind(this);
   }
 
-  openModal() {
-    this.setState({
-      isOpen: true
-    });
-  }
+  // openModal() {
+  //   this.setState({
+  //     isOpen: true
+  //   });
+  // }
 
   getMovieInfo() {
     axios
@@ -52,7 +52,8 @@ class App extends React.Component {
           audienceAverageRating: response.data[0].audienceScore.averageRating,
           audienceReviewCount: response.data[0].audienceScore.totalCount,
           videoUrl: response.data[0].videoUrl,
-          imgUrl: response.data[0].imgUrl
+          imgUrl: response.data[0].imgUrl,
+          videoScene: response.data[0].videoScene
         });
       })
       .catch(error => {

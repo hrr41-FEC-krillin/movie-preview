@@ -21,7 +21,8 @@ let previewSchema = mongoose.Schema({
     totalCount: Number
   },
   videoUrl: String,
-  imgUrl: String
+  imgUrl: String,
+  videoScene: String
 });
 
 previewSchema.plugin(autoIncrement.plugin, "Preview");
@@ -46,7 +47,8 @@ let save = movies => {
         totalCount: movie.audienceScore.totalCount
       },
       videoUrl: movie.videoUrl,
-      imgUrl: movie.imgUrl
+      imgUrl: movie.imgUrl,
+      videoScene: movie.videoScene
     });
 
     moviePreview.save(function(err, moviePreview) {
