@@ -69,19 +69,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="parent-div">
-        <div>
-          <VideoPlayer
-            videoUrl={this.state.videoUrl}
-            onClick={this.openModal}
-          />
-          {/* <ModalVideo
-            channel="youtube"
-            isOpen={this.state.isOpen}
-            videoId="1xqwyudGlPU"
-            onClose={() => this.setState({ isOpen: false })}
-          />
-          <button onClick={this.openModal}>Button</button> */}
-        </div>
+        <VideoPlayer
+          videoUrl={this.state.videoUrl}
+          onClick={this.openModal}
+          videoScene={this.state.videoScene}
+        />
         <div className="poster-critic-container">
           <Poster imgUrl={this.state.imgUrl} />
           <CriticConsensus
