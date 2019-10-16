@@ -27,7 +27,8 @@ class App extends React.Component {
       isOpen: false,
       videoId: ""
     };
-    this.getMovieInfo = this.getMovieInfo.bind(this);
+    // this.getMovieInfo = this.getMovieInfo.bind(this);
+    this.getMovie = this.getMovie.bind(this);
     this.openModal = this.openModal.bind(this);
     this.getVideoId = this.getVideoId.bind(this);
   }
@@ -38,7 +39,7 @@ class App extends React.Component {
     });
   }
 
-  ///api/movie/?title=x+y+Z
+  ///api/movie?title=tilde
 
   getMovie() {
     const title = window.location.search.slice(7);
@@ -51,6 +52,7 @@ class App extends React.Component {
         }
       })
       .then(response => {
+        console.log(response);
         this.setState({
           title: response.data.title,
           consensus: response.data.criticConsensus,
@@ -104,7 +106,8 @@ class App extends React.Component {
   // }
 
   componentDidMount() {
-    this.getMovieInfo();
+    // this.getMovieInfo();
+    this.getMovie();
   }
 
   getVideoId() {
@@ -135,7 +138,7 @@ class App extends React.Component {
               videoUrl: ""
             });
             setTimeout(() => {
-              this.getMovieInfo();
+              this.getMovie();
             }, 100);
           }
         }}

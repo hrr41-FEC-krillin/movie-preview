@@ -11,6 +11,17 @@ class CriticConsensus extends React.Component {
     }
   }
 
+  renderLines(title) {
+    var num = 33;
+    var output = "";
+    num -= title.length;
+    while (num > 2) {
+      output += "─";
+      num -= 2;
+    }
+    return output;
+  }
+
   renderPopcorn() {
     if (this.props.audiencePercentage > 59) {
       return "https://moviepreview.s3.us-east-2.amazonaws.com/popcorn.png";
@@ -27,7 +38,11 @@ class CriticConsensus extends React.Component {
     return (
       <div style={styles.criticConsensusContainer}>
         <h1 style={styles.header}>
-          ──────── {this.props.title.toUpperCase()} ────────
+          {this.renderLines(this.props.title)}
+          &nbsp;&nbsp;
+          {this.props.title.toUpperCase()}
+          &nbsp;&nbsp;
+          {this.renderLines(this.props.title)}
         </h1>
         <div style={styles.criticConsensus}>Critics Consensus</div>
         <div style={styles.consensus}>{this.props.consensus}</div>
