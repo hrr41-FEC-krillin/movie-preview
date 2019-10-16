@@ -8,17 +8,17 @@ class VideoPlayer extends React.Component {
       isOpen: false,
       hover: false
     };
-    this.openModal = this.openModal.bind(this);
+    // this.openModal = this.openModal.bind(this);
   }
 
-  getVideoId(link) {
-    let videoId = link.split("v=", 1);
-    let ampersandPosition = videoId.indexOf("&");
-    if (ampersandPosition != -1) {
-      videoId = videoId.substring(0, ampersandPosition);
-    }
-    return videoId;
-  }
+  // getVideoId(link) {
+  //   let videoId = link.split("v=", 1);
+  //   let ampersandPosition = videoId.indexOf("&");
+  //   if (ampersandPosition != -1) {
+  //     videoId = videoId.substring(0, ampersandPosition);
+  //   }
+  //   return videoId;
+  // }
 
   onHover() {
     this.setState({
@@ -54,36 +54,36 @@ class VideoPlayer extends React.Component {
         width: "100%",
         height: "100%",
         objectFit: "cover"
-      },
-      modalStyle: {
-        overlay: { zIndex: 9999 },
-        position: "fixed",
-        top: "0",
-        left: "0",
-        right: "0",
-        bottom: "0"
       }
+      // modalStyle: {
+      //   overlay: { zIndex: 9999 },
+      //   position: "fixed",
+      //   top: "0",
+      //   left: "0",
+      //   right: "0",
+      //   bottom: "0"
+      // }
     };
     return (
       <div
         style={styles.invisWrapper}
         onMouseEnter={this.onHover.bind(this)}
         onMouseLeave={this.onHover.bind(this)}
-        onClick={this.openModal}
+        onClick={this.props.openModal}
       >
         <img style={styles.videoScene} src={this.props.videoScene} />
         <img
           style={styles.playButton}
           src="https://moviepreview.s3.us-east-2.amazonaws.com/playbutton.jpg"
         />
-        <ModalVideo
+        {/* <ModalVideo
           style={styles.modalStyle}
           channel="youtube"
           isOpen={this.state.isOpen}
           videoId={this.getVideoId(this.props.videoUrl)}
           onClose={() => this.setState({ isOpen: false })}
           theme="dark"
-        />
+        /> */}
       </div>
     );
   }

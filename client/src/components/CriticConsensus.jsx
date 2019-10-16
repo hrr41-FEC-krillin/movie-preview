@@ -25,42 +25,42 @@ class CriticConsensus extends React.Component {
   // }
   render() {
     return (
-      <div className="critic-consensus-container">
-        <h1 className="header">
+      <div style={styles.criticConsensusContainer}>
+        <h1 style={styles.header}>
           ─────── {this.props.name.toUpperCase()} ───────
         </h1>
-        <div className="critic-consensus">Critics Consensus</div>
-        <div className="consensus">{this.props.consensus}</div>
-        <div className="ratings-container">
-          <div className="potato-ratings-container">
-            <div className="potato-img-percentage">
-              <img className="potato-img" src={this.renderPotato()} />
-              <div className="potato-percentage">
+        <div style={styles.criticConsensus}>Critics Consensus</div>
+        <div style={styles.consensus}>{this.props.consensus}</div>
+        <div style={styles.ratingsContainer}>
+          <div style={styles.potatoRatingsContainer}>
+            <div style={styles.potatoImgPercentage}>
+              <img style={styles.potatoImg} src={this.renderPotato()} />
+              <div style={styles.potatoPercentage}>
                 {this.props.potatoPercentage}
                 {"%"}
               </div>
             </div>
-            <div className="potato-meter-title">POTATO METER</div>
-            <div className="potato-count">
+            <div style={styles.potatoMeterTitle}>POTATO METER</div>
+            <div style={styles.potatoCount}>
               Total Count: {this.props.potatoReviewCount}
             </div>
           </div>
-          <div className="audience-ratings-container">
-            <div className="audience-img-percentage">
-              <img className="popcorn-img" src={this.renderPopcorn()} />
-              <div className="audience-percentage">
+          <div style={styles.audienceRatingsContainer}>
+            <div style={styles.audienceImgPercentage}>
+              <img style={styles.popcornImg} src={this.renderPopcorn()} />
+              <div style={styles.audiencePercentage}>
                 {this.props.audiencePercentage}
                 {"%"}
               </div>
             </div>
-            <div className="audience-score-title">AUDIENCE SCORE</div>
-            <div className="audience-count">
+            <div style={styles.audienceScoreTitle}>AUDIENCE SCORE</div>
+            <div style={styles.audienceCount}>
               Verified Ratings: {this.props.audienceReviewCount}
             </div>
           </div>
         </div>
         {/* //eventually move this to moreinfo component */}
-        <div className="more-info-bar">
+        <div style={styles.moreInfoBar}>
           <MoreInfo
             potatoPercentage={this.props.potatoPercentage}
             audiencePercentage={this.props.audiencePercentage}
@@ -80,3 +80,119 @@ class CriticConsensus extends React.Component {
 }
 
 export default CriticConsensus;
+
+const styles = {
+  criticConsensusContainer: {
+    height: "320px",
+    width: "550px",
+    backgroundColor: "#efefef",
+    position: "relative"
+  },
+  header: {
+    fontWeight: "bold",
+    fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
+    letterSpacing: "0.5px",
+    textAlign: "center",
+    color: "#2a2c33",
+    fontSize: "24px"
+  },
+  consensus: {
+    marginTop: "5px",
+    fontFamily: "sans-serif",
+    fontSize: "12px",
+    textAlign: "center",
+    fontWeight: "100"
+  },
+  criticConsensus: {
+    fontWeight: "700",
+    textAlign: "center",
+    fontFamily: "Franklin Gothic FS Med, sans-serif",
+    fontSize: "15px"
+  },
+  ratingsContainer: {
+    marginTop: "20px",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center"
+  },
+  potatoRatingsContainer: {
+    marginRight: "15px"
+  },
+  audienceRatingsContainer: {
+    marginLeft: "15px"
+  },
+  potatoImgPercentage: {
+    display: "flex",
+    flexDirection: "row"
+  },
+  audienceImgPercentage: {
+    display: "flex",
+    flexDirection: "row"
+  },
+  potatoImg: {
+    height: "50px",
+    width: "40px"
+  },
+  popcornImg: {
+    height: "50px",
+    width: "40px"
+  },
+  potatoPercentage: {
+    fontSize: "30px",
+    fontWeight: "700",
+    fontFamily: "Franklin Gothic FS Book, sans-serif",
+    marginTop: "10px",
+    marginLeft: "5px",
+    color: "#2a2c33"
+  },
+  audiencePercentage: {
+    fontSize: "30px",
+    fontWeight: "700",
+    fontFamily: "Franklin Gothic FS Book, sans-serif",
+    marginTop: "10px",
+    marginLeft: "5px",
+    color: "#2a2c33"
+  },
+  potatoMeterTitle: {
+    fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
+    fontSize: "14px",
+    letterSpacing: "0.3px",
+    lineHeight: "1",
+    color: "#2a2c32",
+    textAlign: "right",
+    marginTop: "15px"
+  },
+  audienceScoreTitle: {
+    fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
+    fontSize: "14px",
+    letterSpacing: "0.3px",
+    lineHeight: "1",
+    color: "#2a2c32",
+    textAlign: "left",
+    marginTop: "15px"
+  },
+  potatoCount: {
+    fontFamily: "Franklin Gothic FS Med, sans-serif",
+    color: "#2a2c32",
+    textAlign: "right",
+    marginTop: "5px",
+    fontSize: "12px"
+  },
+  audienceCount: {
+    fontFamily: "Franklin Gothic FS Med, sans-serif",
+    color: "#2a2c32",
+    textAlign: "left",
+    marginTop: "5px",
+    fontSize: "12px"
+  },
+  moreInfoBar: {
+    height: "18px",
+    position: "absolute",
+    bottom: "0",
+    width: "100%",
+    borderBottom: "10px solid #2a2c33",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  }
+};

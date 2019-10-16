@@ -5,7 +5,8 @@ import CriticConsensus from "./CriticConsensus.jsx";
 import MoreInfo from "./MoreInfo.jsx";
 import Poster from "./Poster.jsx";
 import VideoPlayer from "./VideoPlayer.jsx";
-// import ModalVideo from "react-modal-video";
+import ModalVideo from "react-modal-video";
+// @import "node_modules/react-modal-video/scss/modal-video.scss";
 
 class App extends React.Component {
   constructor(props) {
@@ -23,23 +24,32 @@ class App extends React.Component {
       audienceReviewCount: 0,
       videoUrl: "",
       imgUrl: "",
-      videoScene: ""
-      // isOpen: false
+      videoScene: "",
+      isOpen: false
     };
     this.getMovieInfo = this.getMovieInfo.bind(this);
+    this.openModal = this.openModal.bind(this);
   }
 
-  // openModal() {
-  //   this.setState({
-  //     isOpen: true
-  //   });
-  // }
+  getVideoId(link) {
+    let videoId = link.split("v=", 1);
+    let ampersandPosition = videoId.indexOf("&");
+    if (ampersandPosition != -1) {
+      videoId = videoId.substring(0, ampersandPosition);
+    }
+    return videoId;
+  }
+
+  openModal() {
+    this.setState({
+      isOpen: true
+    });
+  }
 
   getMovieInfo() {
     axios
       .get("/api/moviePreviews")
       .then(response => {
-        console.log(response.data);
         this.setState({
           name: response.data[0].movieName,
           consensus: response.data[0].criticConsensus,
@@ -68,13 +78,21 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="parent-div">
+      <div style={styles.parentDiv}>
         <VideoPlayer
           videoUrl={this.state.videoUrl}
           onClick={this.openModal}
           videoScene={this.state.videoScene}
+          openModal={this.openModal}
         />
-        <div className="poster-critic-container">
+        <ModalVideo
+          // style={styles.modalStyle}
+          channel="youtube"
+          isOpen={this.state.isOpen}
+          videoId={this.getVideoId(this.state.videoUrl)}
+          onClose={() => this.setState({ isOpen: false })}
+        />
+        <div style={styles.posterCriticContainer}>
           <Poster imgUrl={this.state.imgUrl} />
           <CriticConsensus
             consensus={this.state.consensus}
@@ -96,6 +114,22 @@ class App extends React.Component {
 
 export default App;
 
-// {
-//   this.state.videoUrl.substring(this.state.videoUrl.indexOf("=") + 1);
-// }
+const styles = {
+  modalStyle: {
+    overlay: { zIndex: 1 },
+    position: "absolute"
+    // top: "0",
+    // left: "0",
+    // right: "0",
+    // bottom: "0"
+  },
+  parentDiv: {
+    width: "750px"
+  },
+  posterCriticContainer: {
+    width: "750px",
+    display: "flex",
+    flexDirection: "row",
+    marginTop: "10px"
+  }
+};
