@@ -6,7 +6,7 @@ mongoose.connect("mongodb://localhost:27017");
 autoIncrement.initialize(mongoose);
 
 let previewSchema = mongoose.Schema({
-  movieName: String,
+  title: String,
   criticConsensus: String,
   potatoMeter: {
     percentage: Number,
@@ -32,7 +32,7 @@ let Preview = mongoose.model("Preview", previewSchema);
 let save = movies => {
   movies.forEach(movie => {
     let moviePreview = new Preview({
-      movieName: movie.movieName,
+      title: movie.title,
       criticConsensus: movie.criticConsensus,
       potatoMeter: {
         percentage: movie.potatoMeter.percentage,

@@ -27,7 +27,7 @@ class CriticConsensus extends React.Component {
     return (
       <div style={styles.criticConsensusContainer}>
         <h1 style={styles.header}>
-          ─────── {this.props.name.toUpperCase()} ───────
+          ──────── {this.props.title.toUpperCase()} ────────
         </h1>
         <div style={styles.criticConsensus}>Critics Consensus</div>
         <div style={styles.consensus}>{this.props.consensus}</div>
@@ -83,8 +83,8 @@ export default CriticConsensus;
 
 const styles = {
   criticConsensusContainer: {
-    height: "320px",
-    width: "550px",
+    height: "325px",
+    width: "590px",
     backgroundColor: "#efefef",
     position: "relative"
   },
@@ -94,32 +94,38 @@ const styles = {
     letterSpacing: "0.5px",
     textAlign: "center",
     color: "#2a2c33",
-    fontSize: "24px"
+    fontSize: "25px",
+    marginTop: "15px"
   },
   consensus: {
     marginTop: "5px",
     fontFamily: "sans-serif",
-    fontSize: "12px",
+    fontSize: "13px",
     textAlign: "center",
-    fontWeight: "100"
+    fontWeight: "300",
+    marginLeft: "20px",
+    marginRight: "20px"
   },
   criticConsensus: {
     fontWeight: "700",
     textAlign: "center",
     fontFamily: "Franklin Gothic FS Med, sans-serif",
-    fontSize: "15px"
+    fontSize: "17px",
+    marginTop: "20px"
   },
   ratingsContainer: {
-    marginTop: "20px",
     display: "flex",
     flexDirection: "row",
-    justifyContent: "center"
+    justifyContent: "center",
+    position: "absolute",
+    top: "165px",
+    left: "155px"
   },
   potatoRatingsContainer: {
-    marginRight: "15px"
+    marginRight: "20px"
   },
   audienceRatingsContainer: {
-    marginLeft: "15px"
+    marginLeft: "20px"
   },
   potatoImgPercentage: {
     display: "flex",
@@ -138,25 +144,23 @@ const styles = {
     width: "40px"
   },
   potatoPercentage: {
-    fontSize: "30px",
+    fontSize: "35px",
     fontWeight: "700",
     fontFamily: "Franklin Gothic FS Book, sans-serif",
-    marginTop: "10px",
-    marginLeft: "5px",
+    marginLeft: "10px",
     color: "#2a2c33"
   },
   audiencePercentage: {
-    fontSize: "30px",
+    fontSize: "35px",
     fontWeight: "700",
     fontFamily: "Franklin Gothic FS Book, sans-serif",
-    marginTop: "10px",
-    marginLeft: "5px",
+    marginLeft: "10px",
     color: "#2a2c33"
   },
   potatoMeterTitle: {
     fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
-    fontSize: "14px",
-    letterSpacing: "0.3px",
+    fontSize: "17px",
+    letterSpacing: "0.4px",
     lineHeight: "1",
     color: "#2a2c32",
     textAlign: "right",
@@ -164,8 +168,8 @@ const styles = {
   },
   audienceScoreTitle: {
     fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
-    fontSize: "14px",
-    letterSpacing: "0.3px",
+    fontSize: "17px",
+    letterSpacing: "0.4px",
     lineHeight: "1",
     color: "#2a2c32",
     textAlign: "left",
@@ -176,14 +180,14 @@ const styles = {
     color: "#2a2c32",
     textAlign: "right",
     marginTop: "5px",
-    fontSize: "12px"
+    fontSize: "14px"
   },
   audienceCount: {
     fontFamily: "Franklin Gothic FS Med, sans-serif",
     color: "#2a2c32",
     textAlign: "left",
     marginTop: "5px",
-    fontSize: "12px"
+    fontSize: "14px"
   },
   moreInfoBar: {
     height: "18px",

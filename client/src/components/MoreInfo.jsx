@@ -2,110 +2,6 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 
-const buttonStyle = {
-  backgroundColor: "#2a2c32",
-  borderRadius: "4px 4px 0 0",
-  border: "none",
-  color: "white",
-  fontSize: "12px",
-  padding: "7x 12px 10px",
-  letterSpacing: "0.075em",
-  fontWeight: "700",
-  fontFamily: "Franklin Gothic FS Med, sans-serif",
-  bottom: "0",
-  position: "aboslute"
-};
-
-const starStyle = {
-  marginTop: "-4px"
-};
-
-const audienceBlip = {
-  fontFamily: "Franklin Gothic FS Book, sans-serif",
-  fontWeight: "500",
-  fontSize: "14px",
-  position: "absolute",
-  left: "235px",
-  top: "110px",
-  right: "50px"
-};
-
-const audienceAvgStyle = {
-  position: "absolute",
-  left: "235px",
-  fontFamily: "Franklin Gothic FS Book, sans-serif",
-  fontWeight: "500",
-  fontSize: "14px"
-};
-
-const audienceTitleStyle = {
-  position: "absolute",
-  fontSize: "18px",
-  fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
-  letterSpacing: "0.3px",
-  lineHeight: "1",
-  color: "#2a2c32",
-  left: "240px",
-  top: "19px"
-};
-
-const audiencePercentageStyle = {
-  fontSize: "18px",
-  fontFamily: "Franklin Gothic FS Book, sans-serif",
-  color: "#2a2c33",
-  fontWeight: "700",
-  left: "405px",
-  position: "absolute",
-  top: "20px"
-};
-
-const popCornStyle = {
-  height: "25px",
-  width: "20px",
-  position: "absolute",
-  left: "380px",
-  top: "14px"
-};
-
-const healthStyle = {
-  marginLeft: "-10px",
-  marginBottom: "10px"
-};
-
-const audienceHealthStyle = {
-  left: "235px",
-  top: "15px",
-  marginBottom: "10px",
-  position: "absolute"
-};
-const potatoStyle = {
-  height: "25px",
-  width: "20px",
-  marginLeft: "20px",
-  marginRight: "5px"
-};
-
-const titleStyle = {
-  fontSize: "18px",
-  fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
-  letterSpacing: "0.3px",
-  lineHeight: "1",
-  color: "#2a2c32"
-};
-
-const percentageStyle = {
-  fontSize: "18px",
-  fontFamily: "Franklin Gothic FS Book, sans-serif",
-  color: "#2a2c33",
-  fontWeight: "700"
-};
-
-const bodyStyle = {
-  fontFamily: "Franklin Gothic FS Book, sans-serif",
-  fontWeight: "500",
-  fontSize: "14px"
-};
-
 class MoreInfo extends React.Component {
   constructor(props) {
     super(props);
@@ -219,50 +115,53 @@ class MoreInfo extends React.Component {
   render() {
     return (
       <>
-        <Button style={buttonStyle} variant="primary" onClick={this.handleShow}>
+        <Button
+          style={styles.buttonStyle}
+          variant="primary"
+          onClick={this.handleShow}
+        >
           MORE INFO
         </Button>
 
         <Modal show={this.state.show} onHide={this.handleClose} centered={true}>
           <Modal.Header closeButton>
-            <Modal.Title style={titleStyle}>
+            <Modal.Title style={styles.titleStyle}>
               POTATOMETER
-              <img style={potatoStyle} src={this.renderPotato()} />
-              <span style={percentageStyle}>
+              <img style={styles.potatoStyle} src={this.renderPotato()} />
+              <span style={styles.percentageStyle}>
                 {this.props.potatoPercentage}
                 {"%"}
               </span>
-              {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
-              <span style={audienceTitleStyle}>AUDIENCE SCORE</span>
-              <img style={popCornStyle} src={this.renderPopcorn()} />
-              <span style={audiencePercentageStyle}>
+              <span style={styles.audienceTitleStyle}>AUDIENCE SCORE</span>
+              <img style={styles.popCornStyle} src={this.renderPopcorn()} />
+              <span style={styles.audiencePercentageStyle}>
                 {this.props.audiencePercentage}
                 {"%"}
               </span>
             </Modal.Title>
           </Modal.Header>
-          <Modal.Body style={bodyStyle}>
+          <Modal.Body style={styles.bodyStyle}>
             <img
-              style={healthStyle}
+              style={styles.healthStyle}
               src={this.renderHealthBar(this.props.potatoPercentage)}
             />
             <img
-              style={audienceHealthStyle}
+              style={styles.audienceHealthStyle}
               src={this.renderHealthBar(this.props.audiencePercentage)}
             />
             {<br></br>}
             Average Rating: {<b> {this.props.potatoAverageRating}/10 </b>}
-            <span style={audienceAvgStyle}>
+            <span style={styles.audienceAvgStyle}>
               Average Rating:
               <img
-                style={starStyle}
+                style={styles.starStyle}
                 src={this.renderStars(this.props.audienceAverageRating)}
               />
               {<b> {this.props.audienceAverageRating}</b>}
             </span>
             {<br></br>}
             Total Count: {<b>{this.props.potatoReviewCount}</b>}
-            <span style={audienceAvgStyle}>
+            <span style={styles.audienceAvgStyle}>
               Total Count: {<b>{this.props.audienceReviewCount}</b>}
             </span>
             {<br></br>}
@@ -270,7 +169,7 @@ class MoreInfo extends React.Component {
             &nbsp; Spoiled: {<b>{this.props.spoiledPotatos}</b>}
             {<br></br>}
             {<br></br>}
-            <span style={audienceBlip}>
+            <span style={styles.audienceBlip}>
               The percentage of regular potatos we've confirmed bought tickets
               for this movie who rated it 3.5 stars or higher.
             </span>
@@ -286,7 +185,98 @@ class MoreInfo extends React.Component {
 
 export default MoreInfo;
 
-//This will be the popup feature clicked from the criticconsensus component
-//It will show critic percetange of good reviews, average rating, total reviews, good reviews, bad reviews
-//It will show audience percentage of good reviews, average rating, total reviews
-//+ health bar based on %, turns green below 60
+const styles = {
+  buttonStyle: {
+    backgroundColor: "#2a2c32",
+    borderRadius: "4px 4px 0 0",
+    border: "none",
+    color: "white",
+    fontSize: "14px",
+    padding: "7px 12px 10px",
+    letterSpacing: "0.075em",
+    fontWeight: "700",
+    fontFamily: "Franklin Gothic FS Med, sans-serif",
+    bottom: "0",
+    position: "aboslute",
+    marginBottom: "8px"
+  },
+  starStyle: {
+    marginTop: "-4px"
+  },
+  audienceBlip: {
+    fontFamily: "Franklin Gothic FS Book, sans-serif",
+    fontWeight: "500",
+    fontSize: "14px",
+    position: "absolute",
+    left: "235px",
+    top: "110px",
+    right: "70px"
+  },
+  audienceAvgStyle: {
+    position: "absolute",
+    left: "235px",
+    fontFamily: "Franklin Gothic FS Book, sans-serif",
+    fontWeight: "500",
+    fontSize: "14px"
+  },
+  audienceTitleStyle: {
+    position: "absolute",
+    fontSize: "18px",
+    fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
+    letterSpacing: "0.3px",
+    lineHeight: "1",
+    color: "#2a2c32",
+    left: "240px",
+    top: "19px"
+  },
+  audiencePercentageStyle: {
+    fontSize: "18px",
+    fontFamily: "Franklin Gothic FS Book, sans-serif",
+    color: "#2a2c33",
+    fontWeight: "700",
+    left: "405px",
+    position: "absolute",
+    top: "20px"
+  },
+  popCornStyle: {
+    height: "25px",
+    width: "20px",
+    position: "absolute",
+    left: "380px",
+    top: "14px"
+  },
+  healthStyle: {
+    marginLeft: "-10px",
+    marginBottom: "10px"
+  },
+  audienceHealthStyle: {
+    left: "235px",
+    top: "15px",
+    marginBottom: "10px",
+    position: "absolute"
+  },
+  potatoStyle: {
+    height: "25px",
+    width: "20px",
+    marginLeft: "20px",
+    marginRight: "5px"
+  },
+  titleStyle: {
+    fontSize: "18px",
+    fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
+    letterSpacing: "0.3px",
+    lineHeight: "1",
+    color: "#2a2c32"
+  },
+  percentageStyle: {
+    fontSize: "18px",
+    fontFamily: "Franklin Gothic FS Book, sans-serif",
+    color: "#2a2c33",
+    fontWeight: "700"
+  },
+  bodyStyle: {
+    fontFamily: "Franklin Gothic FS Book, sans-serif",
+    fontWeight: "500",
+    fontSize: "14px"
+  }
+};

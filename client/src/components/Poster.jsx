@@ -14,8 +14,8 @@ export default Poster;
 
 const styles = {
   moviePoster: {
-    height: "315px",
-    width: "206px",
+    height: "325px",
+    width: "225px",
     marginRight: "10px"
   }
 };
