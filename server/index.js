@@ -1,18 +1,23 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+// const port = 3000;
 const db = require("../server/database/index.js");
 const router = require("./routes.js");
+// const start = require("./start.js");
 
-//change to ../relative path
-// ./client/dist
-app.use(express.static("/Users/robnolan/HRR41/movie-preview/client/dist/"));
+app.use(express.static("../client/dist/"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.status(200).send("Hello World!");
+});
+
 app.use("/api", router);
 
-app.listen(port, () => {
-  console.log(`App listening on port ${port}`);
-});
+module.exports = app;
+
+// app.listen(port, () => {
+//   console.log(`App listening on port ${port}`);
+// });

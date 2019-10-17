@@ -42,8 +42,9 @@ class App extends React.Component {
   ///api/movie?title=tilde
 
   getMovie() {
-    const title = window.location.search.slice(7);
-    title.replace("+", " ");
+    let title = window.location.search.slice(7);
+    title = title.split("+").join(" ");
+    console.log(title);
 
     axios
       .get("/api/movie", {

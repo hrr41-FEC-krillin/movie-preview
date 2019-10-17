@@ -1,8 +1,11 @@
 const mongoose = require("mongoose");
 const autoIncrement = require("mongoose-auto-increment");
 
-mongoose.connect("mongodb://localhost:27017");
-
+mongoose.connect("mongodb://localhost:27017/admin", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+});
 autoIncrement.initialize(mongoose);
 
 let previewSchema = mongoose.Schema({
