@@ -54,7 +54,7 @@ let save = movies => {
       videoScene: movie.videoScene
     });
 
-    moviePreview.save(function(err, moviePreview) {
+    moviePreview.save((err, moviePreview) => {
       if (err) {
         console.log(err);
       } else {

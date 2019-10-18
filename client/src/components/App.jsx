@@ -24,13 +24,11 @@ class App extends React.Component {
       videoUrl: "",
       imgUrl: "",
       videoScene: "",
-      isOpen: false,
-      videoId: ""
+      isOpen: false
     };
-    // this.getMovieInfo = this.getMovieInfo.bind(this);
     this.getMovie = this.getMovie.bind(this);
     this.openModal = this.openModal.bind(this);
-    this.getVideoId = this.getVideoId.bind(this);
+    this.getMovieTest = this.getMovieTest.bind(this);
   }
 
   openModal() {
@@ -39,87 +37,89 @@ class App extends React.Component {
     });
   }
 
+  async getMovieTest() {
+    try {
+      let response = await axios.get("/api/movie", {
+        params: {
+          title: "tilde"
+        }
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
   ///api/movie?title=tilde
 
-  getMovie() {
+  async getMovie() {
     let title = window.location.search.slice(7);
     title = title.split("+").join(" ");
-    console.log(title);
 
-    axios
-      .get("/api/movie", {
+    try {
+      let response = await axios.get("/api/movie", {
         params: {
           title: title
         }
-      })
-      .then(response => {
-        console.log(response);
-        this.setState({
-          title: response.data.title,
-          consensus: response.data.criticConsensus,
-          potatoPercentage: response.data.potatoMeter.percentage,
-          potatoAverageRating: response.data.potatoMeter.averageRating,
-          potatoReviewCount: response.data.potatoMeter.totalCount,
-          freshPotatos: response.data.potatoMeter.fresh,
-          spoiledPotatos: response.data.potatoMeter.spoiled,
-          audiencePercentage: response.data.audienceScore.percentage,
-          audienceAverageRating: response.data.audienceScore.averageRating,
-          audienceReviewCount: response.data.audienceScore.totalCount,
-          videoUrl: response.data.videoUrl,
-          imgUrl: response.data.imgUrl,
-          videoScene: response.data.videoScene
-        });
-      })
-      .catch(error => {
-        console.log("Error from get movie", error);
-      })
-      .finally(() => {
-        this.getVideoId();
       });
+      this.setState({
+        title: response.data.title,
+        consensus: response.data.criticConsensus,
+        potatoPercentage: response.data.potatoMeter.percentage,
+        potatoAverageRating: response.data.potatoMeter.averageRating,
+        potatoReviewCount: response.data.potatoMeter.totalCount,
+        freshPotatos: response.data.potatoMeter.fresh,
+        spoiledPotatos: response.data.potatoMeter.spoiled,
+        audiencePercentage: response.data.audienceScore.percentage,
+        audienceAverageRating: response.data.audienceScore.averageRating,
+        audienceReviewCount: response.data.audienceScore.totalCount,
+        videoUrl: response.data.videoUrl,
+        imgUrl: response.data.imgUrl,
+        videoScene: response.data.videoScene
+      });
+    } catch (err) {
+      console.log(err);
+    }
   }
 
-  // getMovieInfo() {
+  // getMovie() {
+  //   let title = window.location.search.slice(7);
+  //   title = title.split("+").join(" ");
+
   //   axios
-  //     .get("/api/moviePreviews")
+  //     .get("/api/movie", {
+  //       params: {
+  //         title: title
+  //       }
+  //     })
   //     .then(response => {
+  //       console.log("LOOK HERE BITCH", response.data);
   //       this.setState({
-  //         title: response.data[0].title,
-  //         consensus: response.data[0].criticConsensus,
-  //         potatoPercentage: response.data[0].potatoMeter.percentage,
-  //         potatoAverageRating: response.data[0].potatoMeter.averageRating,
-  //         potatoReviewCount: response.data[0].potatoMeter.totalCount,
-  //         freshPotatos: response.data[0].potatoMeter.fresh,
-  //         spoiledPotatos: response.data[0].potatoMeter.spoiled,
-  //         audiencePercentage: response.data[0].audienceScore.percentage,
-  //         audienceAverageRating: response.data[0].audienceScore.averageRating,
-  //         audienceReviewCount: response.data[0].audienceScore.totalCount,
-  //         videoUrl: response.data[0].videoUrl,
-  //         imgUrl: response.data[0].imgUrl,
-  //         videoScene: response.data[0].videoScene
+  //         title: response.data.title,
+  //         consensus: response.data.criticConsensus,
+  //         potatoPercentage: response.data.potatoMeter.percentage,
+  //         potatoAverageRating: response.data.potatoMeter.averageRating,
+  //         potatoReviewCount: response.data.potatoMeter.totalCount,
+  //         freshPotatos: response.data.potatoMeter.fresh,
+  //         spoiledPotatos: response.data.potatoMeter.spoiled,
+  //         audiencePercentage: response.data.audienceScore.percentage,
+  //         audienceAverageRating: response.data.audienceScore.averageRating,
+  //         audienceReviewCount: response.data.audienceScore.totalCount,
+  //         videoUrl: response.data.videoUrl,
+  //         imgUrl: response.data.imgUrl,
+  //         videoScene: response.data.videoScene
   //       });
   //     })
-  //     .catch(error => {
-  //       console.log("Error from get moviepreview", error);
-  //     })
-  //     .finally(() => {
+  //     .then(() => {
   //       this.getVideoId();
-  //     });
+  //     })
+  //     .catch(error => {
+  //       console.log("Error from get movie", error);
+  //     })
+  //     .finally(() => {});
   // }
 
   componentDidMount() {
-    // this.getMovieInfo();
     this.getMovie();
-  }
-
-  getVideoId() {
-    let videoId = this.state.videoUrl.split("v=")[1];
-    let ampersandPosition = videoId.indexOf("&");
-    if (ampersandPosition !== -1) {
-      videoId = videoId.substring(0, ampersandPosition);
-    }
-    this.setState({
-      videoId: videoId
-    });
   }
 
   showHideStyle() {
@@ -152,17 +152,9 @@ class App extends React.Component {
         />
         <div style={this.showHideStyle()}>
           <div style={styles.modalMain}>
-            {/* <ModalVideo
-              // style={styles.modalMain}
-              channel="youtube"
-              isOpen={this.state.isOpen}
-              videoId={this.state.videoId}
-              onClose={() => this.setState({ isOpen: false })}
-            /> */}
             <div>
               <div>
                 <iframe
-                  style={styles.trailer}
                   src={
                     this.state.videoUrl.replace("watch?v=", "embed/") +
                     "?autoplay=1"
@@ -225,9 +217,6 @@ const styles = {
     height: "100%",
     top: "300px",
     left: "300px"
-    // width: "918px",
-    // height: "529px"
-    // transform: "translate(-50%,-50%)"
   },
   parentDiv: {
     width: "825px",

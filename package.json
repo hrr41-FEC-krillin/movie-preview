@@ -3,19 +3,19 @@
   "jest": {
     "verbose": true,
     "setupFilesAfterEnv": [
-      "<rootDir>/client/src/test.js"
+      "./node_modules/jest-enzyme/lib/index.js"
     ],
     "testEnvironment": "node"
   },
   "transform": {
     "^.+\\.[t|j]sx?$": "babel-jest"
   },
-  "main": "index.js",
+  "main": "start.js",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
-    "test": "jest --detectOpenHandles",
+    "test": "jest",
     "test:watch": "jest --watch",
     "seed": "node server/seeder.js",
     "build": "webpack -d --watch",
@@ -23,15 +23,18 @@
   },
   "dependencies": {
     "@types/react-transition-group": "^4.2.3",
+    "async-wait-until": "^1.2.4",
     "autoprefixer": "^9.6.4",
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
+    "jest-enzyme": "^7.1.1",
     "mongoose": "^5.7.4",
     "mongoose-auto-increment": "^5.0.1",
     "mongoose-unique-validator": "^2.0.3",
+    "nock": "^11.4.0",
     "nodemon": "^1.19.3",
     "path": "^0.12.7",
     "react": "^16.10.2",
@@ -55,7 +58,10 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "file-loader": "^4.2.0",
+    "jsdom": "15.2.0",
+    "jsdom-global": "3.0.2",
     "node-sass": "^4.12.0",
+    "npm-reinstall": "^3.1.0",
     "react-test-renderer": "^16.10.2",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
