@@ -5,6 +5,7 @@ import { shallow, mount, render, configure } from "enzyme";
 import App from "./components/App.jsx";
 import Adapter from "enzyme-adapter-react-16";
 configure({ adapter: new Adapter() });
+import MoreInfo from "./components/MoreInfo.jsx";
 // const request = require("supertest");
 // import waitUntil from "async-wait-until";
 // import nock from "nock";
@@ -84,5 +85,9 @@ describe("<App />", () => {
   it("matches the component", () => {
     const wrapper = mount(<App />);
     expect(wrapper).toMatchElement(<App />);
+  });
+  it("has a button", () => {
+    const wrapper = shallow(<MoreInfo />);
+    expect(wrapper.find(".button")).toHaveLength(1);
   });
 });

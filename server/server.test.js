@@ -36,12 +36,13 @@ describe("Get request", () => {
 });
 
 ///// ******************DATABASE TESTS***************** /////
-// import db from "./database";
+// let data = require("../seedMe.json");
+// let testSave = require("./database/index.js");
 
 // describe("Database", () => {
-//   let testmodel = db.mongoose.model("Testmodel", previewSchema);
+//   let testDB = testSave.testSave(data);
 
 //   test("Each model will have the designated properties", () => {
-//     expect(testmodel).toHaveProperty("title");
+//     expect(testDB).toHaveProperty("title");
 //   });
 // });

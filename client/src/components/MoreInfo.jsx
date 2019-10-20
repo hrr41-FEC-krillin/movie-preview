@@ -116,6 +116,7 @@ class MoreInfo extends React.Component {
     return (
       <>
         <Button
+          className="button"
           style={styles.buttonStyle}
           variant="primary"
           onClick={this.handleShow}

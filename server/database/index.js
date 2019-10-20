@@ -65,4 +65,5 @@ let save = movies => {
 };
 
 module.exports.save = save;
+module.exports.testSave = testSave;
 module.exports.Preview = Preview;
