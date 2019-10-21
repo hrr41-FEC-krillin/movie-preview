@@ -36,7 +36,7 @@ class CriticConsensus extends React.Component {
   // }
   render() {
     return (
-      <div style={styles.criticConsensusContainer}>
+      <div className="title" style={styles.criticConsensusContainer}>
         <h1 style={styles.header}>
           {this.renderLines(this.props.title)}
           &nbsp;&nbsp;
