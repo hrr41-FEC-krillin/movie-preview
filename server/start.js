@@ -1,4 +1,3 @@
-// const express = require("express");
 const express = require("express");
 const app = require("./index.js");
 let port = 3050;

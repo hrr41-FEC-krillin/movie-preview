@@ -38,16 +38,16 @@ let save = movies => {
       title: movie.title,
       criticConsensus: movie.criticConsensus,
       potatoMeter: {
+        fresh: movie.potatoMeter.fresh,
+        spoiled: movie.potatoMeter.spoiled,
         percentage: movie.potatoMeter.percentage,
         averageRating: movie.potatoMeter.averageRating,
-        totalCount: movie.potatoMeter.totalCount,
-        fresh: movie.potatoMeter.fresh,
-        spoiled: movie.potatoMeter.spoiled
+        totalCount: movie.potatoMeter.totalCount
       },
       audienceScore: {
+        totalCount: movie.audienceScore.totalCount,
         percentage: movie.audienceScore.percentage,
-        averageRating: movie.audienceScore.averageRating,
-        totalCount: movie.audienceScore.totalCount
+        averageRating: movie.audienceScore.averageRating
       },
       videoUrl: movie.videoUrl,
       imgUrl: movie.imgUrl,
@@ -65,5 +65,4 @@ let save = movies => {
 };
 
 module.exports.save = save;
-module.exports.testSave = testSave;
 module.exports.Preview = Preview;

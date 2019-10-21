@@ -5,7 +5,6 @@ import CriticConsensus from "./CriticConsensus.jsx";
 import MoreInfo from "./MoreInfo.jsx";
 import Poster from "./Poster.jsx";
 import VideoPlayer from "./VideoPlayer.jsx";
-import ModalVideo from "react-modal-video";
 
 class App extends React.Component {
   constructor(props) {
@@ -39,17 +38,12 @@ class App extends React.Component {
 
   async getMovieTest() {
     try {
-      let response = await axios.get("/api/movie", {
-        params: {
-          title: "tilde"
-        }
-      });
+      let response = await axios.get("/api/movie?title=tilde");
+      return response.data;
     } catch (err) {
       console.log(err);
     }
   }
-
-  ///api/movie?title=tilde
 
   async getMovie() {
     let title = window.location.search.slice(7);
@@ -76,47 +70,11 @@ class App extends React.Component {
         imgUrl: response.data.imgUrl,
         videoScene: response.data.videoScene
       });
+      return response.data;
     } catch (err) {
       console.log(err);
     }
   }
-
-  // getMovie() {
-  //   let title = window.location.search.slice(7);
-  //   title = title.split("+").join(" ");
-
-  //   axios
-  //     .get("/api/movie", {
-  //       params: {
-  //         title: title
-  //       }
-  //     })
-  //     .then(response => {
-  //       console.log("LOOK HERE BITCH", response.data);
-  //       this.setState({
-  //         title: response.data.title,
-  //         consensus: response.data.criticConsensus,
-  //         potatoPercentage: response.data.potatoMeter.percentage,
-  //         potatoAverageRating: response.data.potatoMeter.averageRating,
-  //         potatoReviewCount: response.data.potatoMeter.totalCount,
-  //         freshPotatos: response.data.potatoMeter.fresh,
-  //         spoiledPotatos: response.data.potatoMeter.spoiled,
-  //         audiencePercentage: response.data.audienceScore.percentage,
-  //         audienceAverageRating: response.data.audienceScore.averageRating,
-  //         audienceReviewCount: response.data.audienceScore.totalCount,
-  //         videoUrl: response.data.videoUrl,
-  //         imgUrl: response.data.imgUrl,
-  //         videoScene: response.data.videoScene
-  //       });
-  //     })
-  //     .then(() => {
-  //       this.getVideoId();
-  //     })
-  //     .catch(error => {
-  //       console.log("Error from get movie", error);
-  //     })
-  //     .finally(() => {});
-  // }
 
   componentDidMount() {
     this.getMovie();
