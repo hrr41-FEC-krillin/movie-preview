@@ -19,6 +19,7 @@ describe("Get request", () => {
       );
     } catch (err) {
       console.log("error");
+      throw err;
     }
     expect(response.data.title).toBe("jean shorts mustache");
   });

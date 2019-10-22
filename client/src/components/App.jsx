@@ -42,11 +42,12 @@ class App extends React.Component {
       return response.data;
     } catch (err) {
       console.log(err);
+      throw err;
     }
   }
 
   async getMovie() {
-    let title = window.location.search.slice(7);
+    let title = window.location.search.slice(7) || 0;
     title = title.split("+").join(" ");
 
     try {
@@ -73,45 +74,12 @@ class App extends React.Component {
       return response.data;
     } catch (err) {
       console.log(err);
+      throw err;
     }
   }
 
-  // getMovie() {
-  //   let title = window.location.search.slice(7);
-  //   title = title.split("+").join(" ");
-
-  //   axios
-  //     .get("/api/movie", {
-  //             params: {
-  //               title: title
-  //             }
-  //           });
-  //     .then(response => {
-  //       this.setState({
-  //       title: response.data.title,
-  //       consensus: response.data.criticConsensus,
-  //       potatoPercentage: response.data.potatoMeter.percentage,
-  //       potatoAverageRating: response.data.potatoMeter.averageRating,
-  //       potatoReviewCount: response.data.potatoMeter.totalCount,
-  //       freshPotatos: response.data.potatoMeter.fresh,
-  //       spoiledPotatos: response.data.potatoMeter.spoiled,
-  //       audiencePercentage: response.data.audienceScore.percentage,
-  //       audienceAverageRating: response.data.audienceScore.averageRating,
-  //       audienceReviewCount: response.data.audienceScore.totalCount,
-  //       videoUrl: response.data.videoUrl,
-  //       imgUrl: response.data.imgUrl,
-  //       videoScene: response.data.videoScene
-  //       });
-  //     })
-  //     .catch(error => {
-  //       console.log("Error from get moviepreview", error);
-  //     })
-  //     .finally(() => {});
-  // }
-
   componentDidMount() {
     this.getMovie();
-    console.log("umm");
   }
 
   showHideStyle() {
@@ -204,17 +172,21 @@ const styles = {
     zIndex: "1000"
   },
   modalMain: {
-    position: "fixed",
+    position: "absolute",
     width: "100%",
     height: "100%",
-    top: "300px",
-    left: "300px"
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "100vh"
   },
   parentDiv: {
     width: "825px",
     marginTop: "10px",
-    marginLeft: "10px",
-    display: "relative"
+    marginLeft: "auto",
+    marginRight: "auto",
+    display: "relative",
+    marginBottom: "10px"
   },
   posterCriticContainer: {
     width: "825px",
