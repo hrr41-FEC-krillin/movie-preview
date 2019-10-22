@@ -106,6 +106,6 @@ describe("<MoreInfo />", () => {
 describe("<CriticConsensus />", () => {
   it("renders title based on props passed down", () => {
     const wrapper = mount(<CriticConsensus title="Lion King" />);
-    expect(wrapper.find(".title").text()).toBe("Lion King");
+    expect(wrapper.props()).toBe("Lion King");
   });
 });

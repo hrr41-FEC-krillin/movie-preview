@@ -76,8 +76,42 @@ class App extends React.Component {
     }
   }
 
+  // getMovie() {
+  //   let title = window.location.search.slice(7);
+  //   title = title.split("+").join(" ");
+
+  //   axios
+  //     .get("/api/movie", {
+  //             params: {
+  //               title: title
+  //             }
+  //           });
+  //     .then(response => {
+  //       this.setState({
+  //       title: response.data.title,
+  //       consensus: response.data.criticConsensus,
+  //       potatoPercentage: response.data.potatoMeter.percentage,
+  //       potatoAverageRating: response.data.potatoMeter.averageRating,
+  //       potatoReviewCount: response.data.potatoMeter.totalCount,
+  //       freshPotatos: response.data.potatoMeter.fresh,
+  //       spoiledPotatos: response.data.potatoMeter.spoiled,
+  //       audiencePercentage: response.data.audienceScore.percentage,
+  //       audienceAverageRating: response.data.audienceScore.averageRating,
+  //       audienceReviewCount: response.data.audienceScore.totalCount,
+  //       videoUrl: response.data.videoUrl,
+  //       imgUrl: response.data.imgUrl,
+  //       videoScene: response.data.videoScene
+  //       });
+  //     })
+  //     .catch(error => {
+  //       console.log("Error from get moviepreview", error);
+  //     })
+  //     .finally(() => {});
+  // }
+
   componentDidMount() {
     this.getMovie();
+    console.log("umm");
   }
 
   showHideStyle() {

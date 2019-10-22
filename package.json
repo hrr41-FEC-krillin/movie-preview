@@ -17,7 +17,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "seed": "node server/seeder.js",
+    "seed": "node server/database/seeder.js",
     "build": "webpack -d --watch",
     "nodemon": "nodemon server/start.js"
   },
