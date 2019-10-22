@@ -50,7 +50,7 @@ class App extends React.Component {
     title = title.split("+").join(" ");
 
     try {
-      let response = await axios.get("/api/movie", {
+      let response = await axios.get("http://localhost:3003/api/movie", {
         params: {
           title: title
         }
