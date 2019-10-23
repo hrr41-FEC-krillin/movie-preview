@@ -14,17 +14,39 @@ class MoreInfo extends React.Component {
 
   renderPotato() {
     if (this.props.potatoPercentage > 59) {
-      return "https://moviepreview.s3.us-east-2.amazonaws.com/potato.png";
+      return (
+        <img
+          style={styles.potatoStyle}
+          src={"https://moviepreview.s3.us-east-2.amazonaws.com/potato.png"}
+        />
+      );
     } else {
-      return "https://moviepreview.s3.us-east-2.amazonaws.com/Smashed_Potato_Yellow.png";
+      return (
+        <img
+          style={styles.potatoStyle}
+          src={
+            "https://moviepreview.s3.us-east-2.amazonaws.com/greenpotato.png"
+          }
+        />
+      );
     }
   }
 
   renderPopcorn() {
     if (this.props.audiencePercentage > 59) {
-      return "https://moviepreview.s3.us-east-2.amazonaws.com/popcorn.png";
+      return (
+        <img
+          style={styles.popcornStyle}
+          src="https://moviepreview.s3.us-east-2.amazonaws.com/popcorn.png"
+        />
+      );
     } else {
-      return "https://moviepreview.s3.us-east-2.amazonaws.com/greenpopcorn.png";
+      return (
+        <img
+          style={styles.greenPopcornStyle}
+          src="https://moviepreview.s3.us-east-2.amazonaws.com/greenpopcorn.png"
+        />
+      );
     }
   }
 
@@ -128,13 +150,13 @@ class MoreInfo extends React.Component {
           <Modal.Header closeButton>
             <Modal.Title style={styles.titleStyle}>
               POTATOMETER
-              <img style={styles.potatoStyle} src={this.renderPotato()} />
+              {this.renderPotato()}
               <span style={styles.percentageStyle}>
                 {this.props.potatoPercentage}
                 {"%"}
               </span>
               <span style={styles.audienceTitleStyle}>AUDIENCE SCORE</span>
-              <img style={styles.popCornStyle} src={this.renderPopcorn()} />
+              {this.renderPopcorn()}
               <span style={styles.audiencePercentageStyle}>
                 {this.props.audiencePercentage}
                 {"%"}
@@ -239,11 +261,24 @@ const styles = {
     position: "absolute",
     top: "20px"
   },
-  popCornStyle: {
+  potatoStyle: {
+    height: "25px",
+    width: "20px",
+    marginLeft: "20px",
+    marginRight: "5px"
+  },
+  popcornStyle: {
     height: "25px",
     width: "20px",
     position: "absolute",
     left: "380px",
+    top: "14px"
+  },
+  greenPopcornStyle: {
+    height: "25px",
+    width: "35px",
+    position: "absolute",
+    left: "375px",
     top: "14px"
   },
   healthStyle: {
@@ -255,12 +290,6 @@ const styles = {
     top: "15px",
     marginBottom: "10px",
     position: "absolute"
-  },
-  potatoStyle: {
-    height: "25px",
-    width: "20px",
-    marginLeft: "20px",
-    marginRight: "5px"
   },
   titleStyle: {
     fontSize: "18px",

@@ -36,9 +36,13 @@ class CriticConsensus extends React.Component {
 
   renderPopcorn() {
     if (this.props.audiencePercentage > 59) {
-      // <img style={styles.popcornImg} src="https://moviepreview.s3.us-east-2.amazonaws.com/popcorn.png" />
-      //   return "https://moviepreview.s3.us-east-2.amazonaws.com/popcorn.png";
-      // } else {
+      return (
+        <img
+          style={styles.popcornImg}
+          src="https://moviepreview.s3.us-east-2.amazonaws.com/popcorn.png"
+        />
+      );
+    } else {
       return (
         <img
           style={styles.greenPopcornImg}
