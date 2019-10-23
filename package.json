@@ -29,6 +29,11 @@
     "bootstrap": "^4.3.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
     "express": "^4.17.1",
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
@@ -44,7 +49,6 @@
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.2",
     "react-modal-video": "^1.2.3",
-    "react-native-hr-component": "^2.0.3",
     "router": "^1.3.3",
     "sinon": "^7.5.0",
     "styled-components": "^4.4.0"
@@ -59,7 +63,7 @@
     "css-loader": "^3.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
     "file-loader": "^4.2.0",
     "jsdom": "15.2.0",
     "jsdom-global": "3.0.2",
@@ -72,5 +76,18 @@
     "url-loader": "^2.2.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"
-  }
+  },
+  "description": "> Project description",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrr41-FEC-krillin/movie-preview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrr41-FEC-krillin/movie-preview/issues"
+  },
+  "homepage": "https://github.com/hrr41-FEC-krillin/movie-preview#readme"
 }

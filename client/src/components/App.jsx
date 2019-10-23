@@ -46,8 +46,8 @@ class App extends React.Component {
     }
   }
 
-  async getMovie() {
-    let title = window.location.search.slice(7) || 0;
+  async getMovie(params) {
+    let title = window.location.search.slice(7) || params;
     title = title.split("+").join(" ");
 
     try {
@@ -79,7 +79,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getMovie();
+    this.getMovie("tilde");
   }
 
   showHideStyle() {
@@ -117,7 +117,7 @@ class App extends React.Component {
                 <iframe
                   src={
                     this.state.videoUrl.replace("watch?v=", "embed/") +
-                    "?autoplay=1"
+                    "?showinfo=0&modestbranding=1&autoplay=1&rel=0&iv_load_policy=3"
                   }
                   width="1090px"
                   height="600px"
@@ -177,8 +177,7 @@ const styles = {
     height: "100%",
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
-    height: "100vh"
+    justifyContent: "center"
   },
   parentDiv: {
     width: "825px",

@@ -5,9 +5,21 @@ import MoreInfo from "./MoreInfo.jsx";
 class CriticConsensus extends React.Component {
   renderPotato() {
     if (this.props.potatoPercentage > 59) {
-      return "https://moviepreview.s3.us-east-2.amazonaws.com/potato.png";
+      return (
+        <img
+          style={styles.potatoImg}
+          src={"https://moviepreview.s3.us-east-2.amazonaws.com/potato.png"}
+        />
+      );
     } else {
-      return "https://moviepreview.s3.us-east-2.amazonaws.com/Smashed_Potato_Yellow.png";
+      return (
+        <img
+          style={styles.potatoImg}
+          src={
+            "https://moviepreview.s3.us-east-2.amazonaws.com/greenpotato.png"
+          }
+        />
+      );
     }
   }
 
@@ -24,9 +36,15 @@ class CriticConsensus extends React.Component {
 
   renderPopcorn() {
     if (this.props.audiencePercentage > 59) {
-      return "https://moviepreview.s3.us-east-2.amazonaws.com/popcorn.png";
-    } else {
-      return "https://moviepreview.s3.us-east-2.amazonaws.com/greenpopcorn.png";
+      // <img style={styles.popcornImg} src="https://moviepreview.s3.us-east-2.amazonaws.com/popcorn.png" />
+      //   return "https://moviepreview.s3.us-east-2.amazonaws.com/popcorn.png";
+      // } else {
+      return (
+        <img
+          style={styles.greenPopcornImg}
+          src="https://moviepreview.s3.us-east-2.amazonaws.com/greenpopcorn.png"
+        />
+      );
     }
   }
 
@@ -49,7 +67,7 @@ class CriticConsensus extends React.Component {
         <div style={styles.ratingsContainer}>
           <div style={styles.potatoRatingsContainer}>
             <div style={styles.potatoImgPercentage}>
-              <img style={styles.potatoImg} src={this.renderPotato()} />
+              {this.renderPotato()}
               <div style={styles.potatoPercentage}>
                 {this.props.potatoPercentage}
                 {"%"}
@@ -62,7 +80,7 @@ class CriticConsensus extends React.Component {
           </div>
           <div style={styles.audienceRatingsContainer}>
             <div style={styles.audienceImgPercentage}>
-              <img style={styles.popcornImg} src={this.renderPopcorn()} />
+              {this.renderPopcorn()}
               <div style={styles.audiencePercentage}>
                 {this.props.audiencePercentage}
                 {"%"}
@@ -151,12 +169,21 @@ const styles = {
     flexDirection: "row"
   },
   potatoImg: {
+    height: "45px",
+    width: "35px"
+  },
+  spoiledPotatoImg: {
     height: "50px",
-    width: "40px"
+    width: "45px"
   },
   popcornImg: {
-    height: "50px",
-    width: "40px"
+    height: "45px",
+    width: "35px"
+  },
+  greenPopcornImg: {
+    height: "45px",
+    width: "55px",
+    marginRight: "-10px"
   },
   potatoPercentage: {
     fontSize: "35px",
