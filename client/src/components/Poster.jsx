@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../styles/Poster.js";
 
 class Poster extends React.Component {
   render() {
@@ -11,11 +12,3 @@ class Poster extends React.Component {
 }
 
 export default Poster;
-
-const styles = {
-  moviePoster: {
-    height: "325px",
-    width: "225px",
-    marginRight: "10px"
-  }
-};
