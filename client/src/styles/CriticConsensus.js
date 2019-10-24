@@ -36,7 +36,7 @@ const styles = {
     justifyContent: "center",
     position: "absolute",
     top: "165px",
-    left: "155px"
+    left: "145px"
   },
   potatoRatingsContainer: {
     marginRight: "20px"
