@@ -24,13 +24,22 @@ class CriticConsensus extends React.Component {
   }
 
   renderLines(title) {
-    var num = 33;
+    var num = 31;
     var output = "";
     num -= title.length;
     while (num > 2) {
       output += "─";
       num -= 2;
     }
+
+    if (title.length > 10 && title.length < 16) {
+      output += "─";
+    } else if (title.length > 15 && title.length < 21) {
+      output += "──";
+    } else if (title.length > 20) {
+      output += "───";
+    }
+
     return output;
   }
 

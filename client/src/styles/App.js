@@ -28,7 +28,7 @@ const styles = {
     justifyContent: "center"
   },
   parentDiv: {
-    width: "825px",
+    width: "800px",
     marginTop: "10px",
     marginLeft: "auto",
     marginRight: "auto",
@@ -36,7 +36,7 @@ const styles = {
     marginBottom: "10px"
   },
   posterCriticContainer: {
-    width: "825px",
+    width: "800px",
     display: "flex",
     flexDirection: "row",
     marginTop: "10px"

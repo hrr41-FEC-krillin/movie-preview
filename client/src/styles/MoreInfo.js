@@ -4,8 +4,8 @@ const styles = {
     borderRadius: "4px 4px 0 0",
     border: "none",
     color: "white",
-    fontSize: "14px",
-    padding: "7px 12px 10px",
+    fontSize: "12px",
+    padding: "8px 14px 8px",
     letterSpacing: "0.075em",
     fontWeight: "700",
     fontFamily: "Franklin Gothic FS Med, sans-serif",
@@ -18,8 +18,8 @@ const styles = {
   },
   audienceBlip: {
     fontFamily: "Franklin Gothic FS Book, sans-serif",
-    fontWeight: "500",
-    fontSize: "14px",
+    fontWeight: "400",
+    fontSize: "13px",
     position: "absolute",
     left: "235px",
     top: "110px",
@@ -29,12 +29,12 @@ const styles = {
     position: "absolute",
     left: "235px",
     fontFamily: "Franklin Gothic FS Book, sans-serif",
-    fontWeight: "500",
-    fontSize: "14px"
+    fontWeight: "400",
+    fontSize: "13px"
   },
   audienceTitleStyle: {
     position: "absolute",
-    fontSize: "18px",
+    fontSize: "16px",
     fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
     letterSpacing: "0.3px",
     lineHeight: "1",
@@ -43,11 +43,11 @@ const styles = {
     top: "19px"
   },
   audiencePercentageStyle: {
-    fontSize: "18px",
+    fontSize: "16px",
     fontFamily: "Franklin Gothic FS Book, sans-serif",
     color: "#2a2c33",
     fontWeight: "700",
-    left: "405px",
+    left: "400px",
     position: "absolute",
     top: "20px"
   },
@@ -61,7 +61,7 @@ const styles = {
     height: "25px",
     width: "20px",
     position: "absolute",
-    left: "380px",
+    left: "375px",
     top: "14px"
   },
   greenPopcornStyle: {
@@ -82,22 +82,22 @@ const styles = {
     position: "absolute"
   },
   titleStyle: {
-    fontSize: "18px",
+    fontSize: "16px",
     fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
     letterSpacing: "0.3px",
     lineHeight: "1",
     color: "#2a2c32"
   },
   percentageStyle: {
-    fontSize: "18px",
+    fontSize: "16px",
     fontFamily: "Franklin Gothic FS Book, sans-serif",
     color: "#2a2c33",
     fontWeight: "700"
   },
   bodyStyle: {
     fontFamily: "Franklin Gothic FS Book, sans-serif",
-    fontWeight: "500",
-    fontSize: "14px"
+    fontWeight: "400",
+    fontSize: "13px"
   }
 };
 

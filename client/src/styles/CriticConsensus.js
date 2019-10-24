@@ -27,7 +27,7 @@ const styles = {
     fontWeight: "700",
     textAlign: "center",
     fontFamily: "Franklin Gothic FS Med, sans-serif",
-    fontSize: "17px",
+    fontSize: "16px",
     marginTop: "20px"
   },
   ratingsContainer: {

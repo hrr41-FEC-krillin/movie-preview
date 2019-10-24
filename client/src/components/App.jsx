@@ -80,7 +80,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getMovie("tilde");
+    this.getMovie("jean+shorts+mustache");
   }
 
   showHideStyle() {
@@ -100,7 +100,7 @@ class App extends React.Component {
               videoUrl: ""
             });
             setTimeout(() => {
-              this.getMovie();
+              this.getMovie("jean+shorts+mustache");
             }, 100);
           }
         }}
@@ -130,7 +130,9 @@ class App extends React.Component {
           </div>
         </div>
         <div style={styles.posterCriticContainer}>
-          <Poster imgUrl={this.state.imgUrl} />
+          <div onClick={this.openModal}>
+            <Poster imgUrl={this.state.imgUrl} />
+          </div>
           <CriticConsensus
             consensus={this.state.consensus}
             title={this.state.title}
