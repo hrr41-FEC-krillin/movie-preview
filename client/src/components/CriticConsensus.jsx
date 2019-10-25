@@ -24,7 +24,7 @@ class CriticConsensus extends React.Component {
   }
 
   renderLines(title) {
-    var num = 31;
+    var num = 25;
     var output = "";
     num -= title.length;
     while (num > 2) {
@@ -86,7 +86,7 @@ class CriticConsensus extends React.Component {
                 {"%"}
               </div>
             </div>
-            <div style={styles.potatoMeterTitle}>POTATO METER</div>
+            <div style={styles.potatoMeterTitle}>POTATOMETER</div>
             <div style={styles.potatoCount}>
               Total Count: {this.props.potatoReviewCount}
             </div>

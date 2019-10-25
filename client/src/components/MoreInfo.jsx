@@ -150,13 +150,15 @@ class MoreInfo extends React.Component {
         <Modal show={this.state.show} onHide={this.handleClose} centered={true}>
           <Modal.Header closeButton>
             <Modal.Title style={styles.titleStyle}>
-              POTATOMETER
+              <b>POTATOMETER</b>
               {this.renderPotato()}
               <span style={styles.percentageStyle}>
                 {this.props.potatoPercentage}
                 {"%"}
               </span>
-              <span style={styles.audienceTitleStyle}>AUDIENCE SCORE</span>
+              <span style={styles.audienceTitleStyle}>
+                <b>AUDIENCE SCORE</b>
+              </span>
               {this.renderPopcorn()}
               <span style={styles.audiencePercentageStyle}>
                 {this.props.audiencePercentage}
@@ -174,7 +176,8 @@ class MoreInfo extends React.Component {
               src={this.renderHealthBar(this.props.audiencePercentage)}
             />
             {<br></br>}
-            Average Rating: {<b> {this.props.potatoAverageRating}/10 </b>}
+            Average Rating:{" "}
+            {<strong> {this.props.potatoAverageRating}/10 </strong>}
             <span style={styles.audienceAvgStyle}>
               Average Rating:
               <img

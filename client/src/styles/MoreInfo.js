@@ -6,19 +6,17 @@ const styles = {
     color: "white",
     fontSize: "12px",
     padding: "8px 14px 8px",
-    letterSpacing: "0.075em",
+    letterSpacing: "0.5px",
     fontWeight: "700",
-    fontFamily: "Franklin Gothic FS Med, sans-serif",
+    fontFamily: "Helvetica, sans-serif",
     bottom: "0",
-    position: "aboslute",
     marginBottom: "8px"
   },
   starStyle: {
     marginTop: "-4px"
   },
   audienceBlip: {
-    fontFamily: "Franklin Gothic FS Book, sans-serif",
-    fontWeight: "400",
+    fontFamily: "Helvetica, sans-serif",
     fontSize: "13px",
     position: "absolute",
     left: "235px",
@@ -28,15 +26,14 @@ const styles = {
   audienceAvgStyle: {
     position: "absolute",
     left: "235px",
-    fontFamily: "Franklin Gothic FS Book, sans-serif",
-    fontWeight: "400",
+    fontFamily: "Helvetica, sans-serif",
     fontSize: "13px"
   },
   audienceTitleStyle: {
     position: "absolute",
     fontSize: "16px",
-    fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
-    letterSpacing: "0.3px",
+    fontFamily: "Helvetica, Impact, Arial, sans-serif",
+    letterSpacing: "-1px",
     lineHeight: "1",
     color: "#2a2c32",
     left: "240px",
@@ -44,10 +41,10 @@ const styles = {
   },
   audiencePercentageStyle: {
     fontSize: "16px",
-    fontFamily: "Franklin Gothic FS Book, sans-serif",
+    fontFamily: "Helvetica, sans-serif",
     color: "#2a2c33",
     fontWeight: "700",
-    left: "400px",
+    left: "420px",
     position: "absolute",
     top: "20px"
   },
@@ -61,14 +58,14 @@ const styles = {
     height: "25px",
     width: "20px",
     position: "absolute",
-    left: "375px",
+    left: "395px",
     top: "14px"
   },
   greenPopcornStyle: {
     height: "25px",
     width: "35px",
     position: "absolute",
-    left: "375px",
+    left: "395px",
     top: "14px"
   },
   healthStyle: {
@@ -83,20 +80,19 @@ const styles = {
   },
   titleStyle: {
     fontSize: "16px",
-    fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
-    letterSpacing: "0.3px",
+    fontFamily: "Helvetica, Impact, Arial, sans-serif",
+    letterSpacing: "-1px",
     lineHeight: "1",
     color: "#2a2c32"
   },
   percentageStyle: {
     fontSize: "16px",
-    fontFamily: "Franklin Gothic FS Book, sans-serif",
+    fontFamily: "Helvetica, sans-serif",
     color: "#2a2c33",
     fontWeight: "700"
   },
   bodyStyle: {
-    fontFamily: "Franklin Gothic FS Book, sans-serif",
-    fontWeight: "400",
+    fontFamily: "Helvetica, sans-serif",
     fontSize: "13px"
   }
 };

@@ -7,8 +7,8 @@ const styles = {
   },
   header: {
     fontWeight: "bold",
-    fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
-    letterSpacing: "0.5px",
+    fontFamily: "Helvetica, Impact, Arial, sans-serif",
+    letterSpacing: "-1.5px",
     textAlign: "center",
     color: "#2a2c33",
     fontSize: "25px",
@@ -16,26 +16,27 @@ const styles = {
   },
   consensus: {
     marginTop: "5px",
-    fontFamily: "sans-serif",
+    fontFamily: "roboto, sans-serif",
     fontSize: "13px",
     textAlign: "center",
-    fontWeight: "300",
+    fontWeight: "200",
     marginLeft: "20px",
     marginRight: "20px"
   },
   criticConsensus: {
     fontWeight: "700",
     textAlign: "center",
-    fontFamily: "Franklin Gothic FS Med, sans-serif",
+    fontFamily: "Helvetica, sans-serif",
     fontSize: "16px",
-    marginTop: "20px"
+    marginTop: "20px",
+    letterSpacing: "-1px"
   },
   ratingsContainer: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
     position: "absolute",
-    top: "165px",
+    top: "180px",
     left: "145px"
   },
   potatoRatingsContainer: {
@@ -72,48 +73,50 @@ const styles = {
   potatoPercentage: {
     fontSize: "35px",
     fontWeight: "700",
-    fontFamily: "Franklin Gothic FS Book, sans-serif",
+    fontFamily: "Helvetica, sans-serif",
     marginLeft: "10px",
     color: "#2a2c33"
   },
   audiencePercentage: {
     fontSize: "35px",
     fontWeight: "700",
-    fontFamily: "Franklin Gothic FS Book, sans-serif",
+    fontFamily: "Helvetica, sans-serif",
     marginLeft: "10px",
     color: "#2a2c33"
   },
   potatoMeterTitle: {
-    fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
-    fontSize: "17px",
-    letterSpacing: "0.4px",
+    fontFamily: "Helvetica, Impact, Arial, sans-serif",
+    fontSize: "15px",
+    letterSpacing: "-1px",
     lineHeight: "1",
     color: "#2a2c32",
     textAlign: "right",
-    marginTop: "15px"
+    marginTop: "5px",
+    fontWeight: "bold"
   },
   audienceScoreTitle: {
-    fontFamily: "Neusa Next Pro Compact Medium, Impact, Arial, sans-serif",
-    fontSize: "17px",
-    letterSpacing: "0.4px",
+    fontFamily: "Helvetica, Impact, Arial, sans-serif",
+    fontSize: "15px",
+    letterSpacing: "-1px",
     lineHeight: "1",
     color: "#2a2c32",
     textAlign: "left",
-    marginTop: "15px"
+    marginTop: "5px",
+    fontWeight: "bold"
   },
   potatoCount: {
-    fontFamily: "Franklin Gothic FS Med, sans-serif",
+    fontFamily: "Roboto, sans-serif",
     color: "#2a2c32",
     textAlign: "right",
     marginTop: "5px",
-    fontSize: "14px"
+    fontSize: "13px"
   },
   audienceCount: {
-    fontFamily: "Franklin Gothic FS Med, sans-serif",
+    fontFamily: "Roboto, sans-serif",
     color: "#2a2c32",
     textAlign: "left",
     marginTop: "5px",
-    fontSize: "14px"
+    fontSize: "13px"
   },
   moreInfoBar: {
     height: "18px",
