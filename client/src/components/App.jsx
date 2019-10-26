@@ -52,11 +52,14 @@ class App extends React.Component {
     title = title.split("+").join(" ");
 
     try {
-      let response = await axios.get("http://localhost:3003/api/movie", {
-        params: {
-          title: title
+      let response = await axios.get(
+        "http://ec2-18-223-155-146.us-east-2.compute.amazonaws.com:3003/api/movie",
+        {
+          params: {
+            title: title
+          }
         }
-      });
+      );
       this.setState({
         title: response.data.title,
         consensus: response.data.criticConsensus,
